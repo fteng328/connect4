@@ -1,0 +1,34 @@
+#outerDiv {
+    width: 350px;
+    border: 2px solid black;
+    overflow: hidden;
+}
+#inner1 {
+	width: 50px;
+	float: left;
+}
+#inner2 {
+	width: 50px;
+	float: left;
+}
+#inner3 {
+	width: 50px;
+	float: left;
+}
+#inner4 {
+	width: 50px;
+	float: left;
+}
+#inner5 {
+	width: 50px;
+	float: left;
+}
+#inner6 {
+	width: 50px;
+	float: left;
+}
+#inner7 {
+	width: 50px;
+	float: left;
+}
+

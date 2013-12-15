@@ -1,0 +1,33 @@
+readme file
+c2tengfe	996842751	Fei Teng
+
+
+CAPTCHA:
+
+we downloaded securimage library from www.phpcaptcha.org/‎
+After input validation in new account creation under controllers/account/createNew, we check that the user have typed in a 6 letter string that corresponds to the catpcha. Only when the user has provided evidence that they are human we would allow for user sign-up. 
+
+
+
+
+
+
+
+
+GAMEPLAY:
+
+when one player invites another player to play connect4 and the invitation is rejected, we would indicate that the invitation is declined and redirect both players back to the arcade index page.
+when one player invites another player to play connect4 and the invitation is accepted, both players would be directed into the gameplay page. We assume that one does not exit in the middle of a game.
+The gameplay implemented through AJAX: when we detect a mouseclick on the gameboard from the player that is supposed to take on a turn, we would add a new block onto the gameboard and save the gameplay info in match.board_state. On the opponent side, the gameboard is updated through AJAX, which reads from match.board_state. 
+The rounds of the game is implemented that the sender of the invitation will play last, while the receiver plays first.
+
+
+
+
+
+
+
+
+WIN DETECTION:
+
+We stored the gameplay info in match.board_state. Starting from each player's thrid turn in the game,we would check for any 4-connected play and identify which player make those plays.(there should be 4 orientations at which 4-connected play could happen) . Then we displayed the winner and provided a link to the invitation page which allowed a player to start the next game.
